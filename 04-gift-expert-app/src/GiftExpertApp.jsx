@@ -3,11 +3,11 @@ import AddCategory from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 
 const GiftExpertApp = () => {
-  const [categories, setCategories] = useState(["One Punch"]);
+  const [categories, setCategories] = useState(["One Punch", "Rick and morty"]);
 
   const handleAddCategory = (newCategory) => {
     if (!categories.includes(newCategory)) {
-      setCategories([...categories, newCategory]);
+      setCategories([newCategory, ...categories]);
     }
   };
 
