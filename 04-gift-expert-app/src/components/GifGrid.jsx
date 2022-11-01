@@ -1,7 +1,7 @@
-import GiftItem from "./GiftItem";
+import { GiftItem } from "./GiftItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
-const GifGrid = ({ category }) => {
+export const GifGrid = ({ category }) => {
   const { images, isLoading } = useFetchGifs({ category });
   return (
     <>
@@ -16,4 +16,4 @@ const GifGrid = ({ category }) => {
   );
 };
 
-export default GifGrid;
+// export default GifGrid;

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AddCategory from "./components/AddCategory";
-import GifGrid from "./components/GifGrid";
+import { AddCategory } from "./components/";
+import { GifGrid } from "./components/";
 
 const GiftExpertApp = () => {
   const [categories, setCategories] = useState(["One Punch", "Rick and morty"]);
