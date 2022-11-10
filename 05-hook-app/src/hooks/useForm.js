@@ -8,5 +8,9 @@ export const useForm = (initialForm = {}) => {
     setFormState((prevValue) => ({ ...prevValue, [name]: value }));
   };
 
-  return { ...formState, onInputChange };
+  const onResetForm = () => {
+    setFormState(initialForm);
+  };
+
+  return { ...formState, onInputChange, onResetForm };
 };
