@@ -10,7 +10,7 @@ export const useFetch = (url) => {
   const getFetch = async () => {
     setState((prevValue) => ({
       ...prevValue,
-      isLoading: false,
+      isLoading: true,
     }));
 
     const response = await fetch(url);

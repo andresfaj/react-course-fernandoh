@@ -5,7 +5,6 @@ import { Quote } from "./Quote";
 
 export const MultipleCustomHooks = () => {
   const { counter, handleIncrement, handleDecrement } = useCounter(1);
-  console.log({ counter });
   const { data, isLoading, hasError } = useFetch(
     `https://www.breakingbadapi.com/api/quotes/${counter}`
   );
